@@ -1,0 +1,29 @@
+Let's make a game!
+  name:Servicedesk Clicker
+  author:Ashlin
+  date:20/09/2025
+  version:0.1
+
+Settings
+  background:https://t3.ftcdn.net/jpg/02/16/47/48/360_F_216474896_GM9LpFdAQq8uHupenU7ayaSUxTNCco1i.jpg
+
+Resources
+  *ticket
+    name:Tikcet
+    desc:A ticket that was submitted by a user
+
+Upgrades
+  *spreadsheet
+    name:Spreadsheet
+    desc:No more documenting tickets on scrap pieces of paper!
+    
+  *first laptop
+    name:Osborne 1
+    desc:Wow, a portable computer!
+
+Buildings
+  *intern
+    name:Intern
+    desc:A newbie that still has a lot to learn. He's trying though!
+    cost:20 coins
+    on tick:give 1 ticket
