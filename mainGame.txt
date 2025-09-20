@@ -22,8 +22,8 @@ Buttons
 
 
 Resources
-  *ticket
-    name:Tickets
+  *UserTickets
+    name:User Tickets
     desc:A ticket that was submitted by a user
 
 Upgrades
