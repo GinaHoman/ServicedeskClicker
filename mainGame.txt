@@ -11,7 +11,7 @@ Settings
 
 // main button
 Buttons
-  *ticket
+  *ticket|tickets
     name:tickets
     desc:Click to create a new ticket.
     icon:https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fsupport-ticket_10729101&psig=AOvVaw22r7kJd4X50B6h8KBDIu-v&ust=1758484244041000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIDiz7uO6I8DFQAAAAAdAAAAABAL
