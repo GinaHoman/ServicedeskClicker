@@ -1,15 +1,29 @@
 Let's make a game!
   name:Servicedesk Clicker
   author:Ashlin
-  date:20/09/2025
+  created:20/092025
   version:0.1
 
 Settings
   background:https://t3.ftcdn.net/jpg/02/16/47/48/360_F_216474896_GM9LpFdAQq8uHupenU7ayaSUxTNCco1i.jpg
+  building cost increase:115%
+  building cost refund:50%
+
+// main button
+Buttons
+  *ticket
+    name:tickets
+    desc:Click to create a new ticket.
+    icon:https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fsupport-ticket_10729101&psig=AOvVaw22r7kJd4X50B6h8KBDIu-v&ust=1758484244041000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIDiz7uO6I8DFQAAAAAdAAAAABAL
+    on click:
+      yield 1 ticket
+    end
+    show clicks
+
 
 Resources
   *ticket
-    name:Tikcet
+    name:Tickets
     desc:A ticket that was submitted by a user
 
 Upgrades
@@ -17,7 +31,7 @@ Upgrades
     name:Spreadsheet
     desc:No more documenting tickets on scrap pieces of paper!
     
-  *first laptop
+  *firstlaptop
     name:Osborne 1
     desc:Wow, a portable computer!
 
@@ -26,4 +40,4 @@ Buildings
     name:Intern
     desc:A newbie that still has a lot to learn. He's trying though!
     cost:20 coins
-    on tick:give 1 ticket
+    on tick:yield 1 ticket
