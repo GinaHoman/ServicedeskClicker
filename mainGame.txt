@@ -14,19 +14,23 @@ Buttons
   *userTicket
     name:Tickets
     desc:Click to create a new ticket.
-    icon:https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fsupport-ticket_10729101&psig=AOvVaw22r7kJd4X50B6h8KBDIu-v&ust=1758484244041000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIDiz7uO6I8DFQAAAAAdAAAAABAL
+    icon:https://file.garden/aM8Bqq-Raxbh-Y7f/support-ticket.jpg
     class:bigButton hasFlares    
     on click:
       yield 1 ticket
     end
     show clicks
 
-
+// Your resources
 Resources
   *ticket
     name:Tickets
     desc:A ticket that was submitted by a user
+    icon:https://file.garden/aM8Bqq-Raxbh-Y7f/support-ticket.jpg
+    show earned
+    show max
 
+// Upgrades for your buildings and ticket yield 
 Upgrades
   *spreadsheet
     name:Spreadsheet
@@ -36,9 +40,14 @@ Upgrades
     name:Osborne 1
     desc:Wow, a portable computer!
 
+// Builings to help you get more tickets more faster
 Buildings
   *intern
-    name:Intern
+    name:Intern|Interns
     desc:A newbie that still has a lot to learn. He's trying though!
     cost:20 tickets
-    on tick:yield 0.1 ticket
+    on tick:
+      yield (0.1*this) ticket
+    end
+
+
